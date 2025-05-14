@@ -4,8 +4,12 @@ import Link from 'next/link'
 import { ThemeSwitcher } from '@/components/theme-switcher'
 import { Button } from '@/components/ui/button'
 import { Search } from '@/components/dashboard/search'
+import { usePathname } from 'next/navigation'
 
 export function Header() {
+  const pathname = usePathname()
+  const isDashboardActive = pathname === '/dashboard' || pathname === '/dashboard/'
+  
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 relative">
       <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-tech-glow animate-pulse-tech" />
@@ -30,6 +34,42 @@ export function Header() {
             </div>
             <span className="font-bold bg-clip-text text-transparent bg-tech-gradient">游戏运营平台</span>
           </Link>
+          
+          {/* 导航链接 */}
+          <nav className="hidden md:flex items-center space-x-1">
+            <Link 
+              href="/dashboard" 
+              className={`px-3 py-1.5 text-sm rounded-md transition-all duration-200 flex items-center gap-1.5 ${
+                isDashboardActive 
+                  ? 'bg-tech-gradient text-white shadow-tech-sm' 
+                  : 'text-muted-foreground hover:text-foreground hover:bg-accent/50'
+              }`}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect x="3" y="3" width="7" height="9" />
+                <rect x="14" y="3" width="7" height="5" />
+                <rect x="14" y="12" width="7" height="9" />
+                <rect x="3" y="16" width="7" height="5" />
+              </svg>
+              <span>仪表盘</span>
+              {isDashboardActive && (
+                <span className="relative flex h-2 w-2 ml-1">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                </span>
+              )}
+            </Link>
+          </nav>
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
           <div className="w-full flex-1 md:w-auto md:flex-none">

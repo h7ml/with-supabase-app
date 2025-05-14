@@ -89,6 +89,11 @@
     background-size: 24px 24px;
   }
   
+  .tech-grid-bg-dots {
+    background-image: radial-gradient(rgba(99, 102, 241, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
   .tech-card {
     @apply relative overflow-hidden;
   }
@@ -105,5 +110,44 @@
   
   .glow-effect {
     box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+  }
+  
+  /* 科技风格滚动条 */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(99, 102, 241, 0.05);
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.2);
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(99, 102, 241, 0.3);
+  }
+  
+  /* 科技风格 选择文本 */
+  ::selection {
+    background: rgba(99, 102, 241, 0.2);
+    color: inherit;
+  }
+}
+
+/* 加入响应式设计的细节调整 */
+@layer utilities {
+  .tech-text-shadow {
+    text-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+  }
+  
+  @media (max-width: 640px) {
+    .tech-grid-bg, .tech-grid-bg-dots {
+      background-size: 16px 16px;
+    }
   }
 }

@@ -89,16 +89,26 @@ const config = {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0.7' },
         },
+        "pulse-slow": {
+          '0%, 100%': { opacity: '0.6' },
+          '50%': { opacity: '0.3' },
+        },
         "glow-tech": {
           '0%, 100%': { boxShadow: '0 0 5px rgba(99, 102, 241, 0.2)' },
           '50%': { boxShadow: '0 0 15px rgba(99, 102, 241, 0.5)' },
+        },
+        "float-tech": {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-5px)' },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "pulse-tech": "pulse-tech 3s infinite ease-in-out",
+        "pulse-slow": "pulse-slow 5s infinite ease-in-out",
         "glow-tech": "glow-tech 3s infinite ease-in-out",
+        "float-tech": "float-tech 6s infinite ease-in-out",
       },
     },
   },
