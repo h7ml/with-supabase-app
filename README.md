@@ -1,7 +1,31 @@
-<a href="https://demo-nextjs-with-supabase.vercel.app/">
+<a href="https://nextjs-with-supabase.h7ml.cn">
   <img alt="Next.js 和 Supabase 入门套件 - 使用 Next.js 和 Supabase 构建应用的最快方式" src="https://demo-nextjs-with-supabase.vercel.app/opengraph-image.png">
   <h1 align="center">Next.js 和 Supabase 入门套件</h1>
 </a>
+
+<div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/h7ml/with-supabase-app)](https://github.com/h7ml/with-supabase-app/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/h7ml/with-supabase-app)](https://github.com/h7ml/with-supabase-app/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/h7ml/with-supabase-app)](https://github.com/h7ml/with-supabase-app/issues)
+[![GitHub license](https://img.shields.io/github/license/h7ml/with-supabase-app)](https://github.com/h7ml/with-supabase-app/blob/main/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/h7ml/with-supabase-app)](https://github.com/h7ml/with-supabase-app/commits/main)
+
+[![Node Version](https://img.shields.io/node/v/with-supabase-app)](https://github.com/h7ml/with-supabase-app)
+[![NPM Version](https://img.shields.io/npm/v/with-supabase-app)](https://www.npmjs.com/package/with-supabase-app)
+[![Dependencies Status](https://status.david-dm.org/gh/h7ml/with-supabase-app.svg)](https://david-dm.org/h7ml/with-supabase-app)
+[![Deploy with Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fh7ml%2Fwith-supabase-app)
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+
+[![Visitors](https://visitor-badge.laobi.icu/badge?page_id=h7ml.with-supabase-app)](https://github.com/h7ml/with-supabase-app)
+[![Lines of code](https://img.shields.io/tokei/lines/github/h7ml/with-supabase-app)](https://github.com/h7ml/with-supabase-app)
+
+</div>
 
 <p align="center">
  使用 Next.js 和 Supabase 构建应用的最快方式
@@ -34,7 +58,7 @@
 
 ## 演示
 
-您可以在 [demo-nextjs-with-supabase.vercel.app](https://demo-nextjs-with-supabase.vercel.app/) 查看一个完整运行的演示。
+您可以在 [nextjs-with-supabase.h7ml.cn](https://nextjs-with-supabase.h7ml.cn) 查看一个完整运行的演示。
 
 ## 部署到 Vercel
 
@@ -42,7 +66,7 @@ Vercel 部署将引导您创建 Supabase 账户和项目。
 
 安装 Supabase 集成后，所有相关的环境变量都将被分配到项目中，因此部署将完全正常运行。
 
-[![使用 Vercel 部署](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fh7ml%2Fwith-supabase-app&project-name=nextjs-with-supabase&repository-name=nextjs-with-supabase&demo-title=nextjs-with-supabase&demo-description=This+starter+configures+Supabase+Auth+to+use+cookies%2C+making+the+user%27s+session+available+throughout+the+entire+Next.js+app+-+Client+Components%2C+Server+Components%2C+Route+Handlers%2C+Server+Actions+and+Middleware.&demo-url=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2F&external-id=https%3A%2F%2Fgithub.com%2Fh7ml%2Fwith-supabase-app&demo-image=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2Fopengraph-image.png)
+[![使用 Vercel 部署](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fh7ml%2Fwith-supabase-app&project-name=nextjs-with-supabase&repository-name=nextjs-with-supabase&demo-title=nextjs-with-supabase&demo-description=This+starter+configures+Supabase+Auth+to+use+cookies%2C+making+the+user%27s+session+available+throughout+the+entire+Next.js+app+-+Client+Components%2C+Server+Components%2C+Route+Handlers%2C+Server+Actions+and+Middleware.&demo-url=https%3A%2F%2Fnextjs-with-supabase.h7ml.cn&external-id=https%3A%2F%2Fgithub.com%2Fh7ml%2Fwith-supabase-app&demo-image=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2Fopengraph-image.png)
 
 上述操作还会将入门套件克隆到您的 GitHub 中，您可以将其克隆到本地并在本地进行开发。
 
@@ -52,18 +76,10 @@ Vercel 部署将引导您创建 Supabase 账户和项目。
 
 1. 您首先需要一个 Supabase 项目，可以通过 [Supabase 仪表板](https://database.new) 创建
 
-2. 使用 Supabase 入门模板的 npx 命令创建 Next.js 应用
+2. 克隆项目到本地
 
    ```bash
-   npx create-next-app --example with-supabase with-supabase-app
-   ```
-
-   ```bash
-   yarn create next-app --example with-supabase with-supabase-app
-   ```
-
-   ```bash
-   pnpm create next-app --example with-supabase with-supabase-app
+   git clone https://github.com/h7ml/with-supabase-app.git
    ```
 
 3. 使用 `cd` 命令进入应用目录
@@ -72,7 +88,13 @@ Vercel 部署将引导您创建 Supabase 账户和项目。
    cd with-supabase-app
    ```
 
-4. 将 `.env.example` 重命名为 `.env.local`，并更新以下内容：
+4. 安装依赖
+
+   ```bash
+   pnpm install
+   ```
+
+5. 将 `.env.example` 重命名为 `.env.local`，并更新以下内容：
 
    ```
    NEXT_PUBLIC_SUPABASE_URL=[插入 Supabase 项目 URL]
@@ -81,24 +103,28 @@ Vercel 部署将引导您创建 Supabase 账户和项目。
 
    `NEXT_PUBLIC_SUPABASE_URL` 和 `NEXT_PUBLIC_SUPABASE_ANON_KEY` 都可以在 [您的 Supabase 项目的 API 设置](https://app.supabase.com/project/_/settings/api) 中找到
 
-5. 现在您可以运行 Next.js 本地开发服务器：
+6. 现在您可以运行 Next.js 本地开发服务器：
 
    ```bash
-   npm run dev
+   pnpm dev
    ```
 
    入门套件现在应该在 [localhost:3000](http://localhost:3000/) 上运行。
 
-6. 该模板默认初始化了 shadcn/ui 样式。如果您想要其他 ui.shadcn 样式，请删除 `components.json` 并[重新安装 shadcn/ui](https://ui.shadcn.com/docs/installation/next)
+7. 该模板默认初始化了 shadcn/ui 样式。如果您想要其他 ui.shadcn 样式，请删除 `components.json` 并[重新安装 shadcn/ui](https://ui.shadcn.com/docs/installation/next)
 
 > 查看[本地开发文档](https://supabase.com/docs/guides/getting-started/local-development)，也可以在本地运行 Supabase。
 
 ## 反馈和问题
 
-请在 [Supabase GitHub 组织](https://github.com/supabase/supabase/issues/new/choose) 上提交反馈和问题。
+请在 [GitHub Issues](https://github.com/h7ml/with-supabase-app/issues) 上提交反馈和问题。
 
 ## 更多 Supabase 示例
 
 - [Next.js 订阅支付入门](https://github.com/vercel/nextjs-subscription-payments)
 - [基于 Cookie 的身份验证与 Next.js 13 App Router（免费课程）](https://youtube.com/playlist?list=PL5S4mPUpp4OtMhpnp93EFSo42iQ40XjbF)
 - [Supabase Auth 与 Next.js App Router](https://github.com/supabase/supabase/tree/master/examples/auth/nextjs)
+
+## 许可证
+
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。

@@ -1,9 +1,53 @@
 {
+  "name": "with-supabase-app",
+  "version": "1.0.0",
   "private": true,
+  "description": "使用 Next.js 和 Supabase 构建应用的最快方式",
+  "keywords": [
+    "nextjs",
+    "next.js",
+    "supabase",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "shadcn-ui",
+    "authentication",
+    "ssr",
+    "fullstack",
+    "template",
+    "starter-kit",
+    "boilerplate",
+    "auth",
+    "cookie-based-auth",
+    "middleware",
+    "app-router",
+    "pages-router",
+    "vercel",
+    "全栈应用",
+    "模板项目",
+    "认证系统",
+    "服务端渲染"
+  ],
+  "author": {
+    "name": "h7ml",
+    "email": "h7ml@qq.com",
+    "url": "https://github.com/h7ml"
+  },
+  "homepage": "https://nextjs-with-supabase.h7ml.cn",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h7ml/with-supabase-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/h7ml/with-supabase-app/issues"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.1.1",
