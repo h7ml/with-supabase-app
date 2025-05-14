@@ -24,7 +24,7 @@ export const securityFormSchema = z.object({
     .regex(/^(?=.*[a-zA-Z])(?=.*\d)/, {
       message: '密码必须包含字母和数字',
     }),
-  two_factor: z.boolean().default(false),
+  two_factor: z.boolean(),
 })
 
 export const gameFormSchema = z.object({
