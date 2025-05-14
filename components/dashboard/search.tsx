@@ -21,7 +21,7 @@ export function Search() {
       <Input
         type="search"
         placeholder="搜索..."
-        className="w-full pl-8"
+        className="w-full pl-8 bg-background/60 border-border/50 focus:border-primary/50 focus:shadow-tech-sm transition-all"
       />
     </div>
   )

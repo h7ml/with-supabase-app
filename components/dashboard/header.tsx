@@ -7,11 +7,28 @@ import { Search } from '@/components/dashboard/search'
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center">
+    <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 relative">
+      <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-tech-glow animate-pulse-tech" />
+      
+      <div className="container flex h-14 items-center max-w-full px-4">
         <div className="mr-4 flex">
           <Link className="mr-6 flex items-center space-x-2" href="/">
-            <span className="font-bold">游戏运营平台</span>
+            <div className="w-7 h-7 rounded bg-tech-gradient flex items-center justify-center shadow-tech-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
+              </svg>
+            </div>
+            <span className="font-bold bg-clip-text text-transparent bg-tech-gradient">游戏运营平台</span>
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
@@ -19,8 +36,31 @@ export function Header() {
             <Search />
           </div>
           <nav className="flex items-center space-x-2">
+            <div className="hidden md:flex items-center text-sm mr-2 border border-border/50 rounded-md px-2 py-1 text-muted-foreground">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="mr-1"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span id="tech-time">
+                {new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+              </span>
+            </div>
+            
             <ThemeSwitcher />
-            <Button variant="ghost" size="icon">
+            
+            <Button variant="outline" size="icon" className="border-border/50 shadow-tech-sm relative">
+              <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-tech-indigo animate-pulse-tech" />
               <span className="sr-only">通知</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +78,8 @@ export function Header() {
                 <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
               </svg>
             </Button>
-            <Button variant="ghost" size="icon">
+            
+            <Button variant="outline" size="icon" className="border-border/50 shadow-tech-sm">
               <span className="sr-only">用户设置</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,5 +102,14 @@ export function Header() {
       </div>
     </header>
   )
+}
+
+if (typeof document !== 'undefined') {
+  setInterval(() => {
+    const timeElement = document.getElementById('tech-time')
+    if (timeElement) {
+      timeElement.textContent = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+    }
+  }, 60000)
 } 
  
