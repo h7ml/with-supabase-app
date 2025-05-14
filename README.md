@@ -11,11 +11,6 @@
 [![GitHub license](https://img.shields.io/github/license/h7ml/with-supabase-app)](https://github.com/h7ml/with-supabase-app/blob/main/LICENSE)
 [![GitHub last commit](https://img.shields.io/github/last-commit/h7ml/with-supabase-app)](https://github.com/h7ml/with-supabase-app/commits/main)
 
-[![Node Version](https://img.shields.io/node/v/with-supabase-app)](https://github.com/h7ml/with-supabase-app)
-[![NPM Version](https://img.shields.io/npm/v/with-supabase-app)](https://www.npmjs.com/package/with-supabase-app)
-[![Dependencies Status](https://status.david-dm.org/gh/h7ml/with-supabase-app.svg)](https://david-dm.org/h7ml/with-supabase-app)
-[![Deploy with Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fh7ml%2Fwith-supabase-app)
-
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
